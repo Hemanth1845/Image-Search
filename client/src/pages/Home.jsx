@@ -16,7 +16,7 @@ const Home = () => {
   const [lastSearch, setLastSearch] = useState({ term: '', count: 0 });
   const [isDownloading, setIsDownloading] = useState(false);
   
-  // Fetch top searches on component mount
+  
   useEffect(() => {
     fetchTopSearches();
   }, []);
@@ -31,7 +31,7 @@ const Home = () => {
     }
   };
   
-  // Handle search form submission
+ 
   const handleSearch = async (e) => {
     e.preventDefault();
     
@@ -62,7 +62,7 @@ const Home = () => {
     setIsLoading(false);
   };
   
-  // Handle image selection
+ 
   const handleImageSelect = (image) => {
     setSelectedImages(prevSelected => {
       const isSelected = prevSelected.some(img => img.id === image.id);
@@ -75,7 +75,7 @@ const Home = () => {
     });
   };
   
-  // Handle download selected images
+ 
   const handleDownload = async () => {
     if (selectedImages.length === 0) {
       toast.error('Please select at least one image');
@@ -91,7 +91,7 @@ const Home = () => {
         responseType: 'blob'
       });
       
-      // Create download link
+     
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
@@ -109,7 +109,7 @@ const Home = () => {
     setIsDownloading(false);
   };
   
-  // Handle clicking on a top search term
+  
   const handleTopSearchClick = (term) => {
     setSearchTerm(term);
     // Submit the search form
