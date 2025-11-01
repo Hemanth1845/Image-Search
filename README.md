@@ -1,4 +1,4 @@
-# MERN Image Search & Multi-Select App
+# Image Search
 
 A full-stack web application for searching, selecting, and managing images with authentication.
 
