@@ -64,6 +64,8 @@ A full-stack web application for searching, selecting, and managing images with 
 
 
 
+
+-
 Image-Search/
 │
 ├── client/ # React frontend
@@ -92,30 +94,35 @@ Image-Search/
 ├── .env # Environment variables
 ├── README.md
 └── package.json
-
+-
 
 git clone https://github.com/Hemanth1845/Image-Search.git
 cd Image-Search
 
 
 
+
+
+
+
+
 - .env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-UNSPLASH_ACCESS_KEY=your_unsplash_api_key
-SESSION_SECRET=your_secret_key
+- PORT=5000
+- MONGO_URI=your_mongodb_connection_string
+- UNSPLASH_ACCESS_KEY=your_unsplash_api_key
+- SESSION_SECRET=your_secret_key
 
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-GOOGLE_CALLBACK_URL=http://localhost:5000/auth/google/callback
+- GOOGLE_CLIENT_ID=your_google_client_id
+- GOOGLE_CLIENT_SECRET=your_google_client_secret
+- GOOGLE_CALLBACK_URL=http://localhost:5000/auth/google/callback
 
-GITHUB_CLIENT_ID=your_github_client_id
-GITHUB_CLIENT_SECRET=your_github_client_secret
-GITHUB_CALLBACK_URL=http://localhost:5000/auth/github/callback
+- GITHUB_CLIENT_ID=your_github_client_id
+- GITHUB_CLIENT_SECRET=your_github_client_secret
+- GITHUB_CALLBACK_URL=http://localhost:5000/auth/github/callback
 
-FACEBOOK_CLIENT_ID=your_facebook_client_id
-FACEBOOK_CLIENT_SECRET=your_facebook_client_secret
-FACEBOOK_CALLBACK_URL=http://localhost:5000/auth/facebook/callback
+- FACEBOOK_CLIENT_ID=your_facebook_client_id
+- FACEBOOK_CLIENT_SECRET=your_facebook_client_secret
+- FACEBOOK_CALLBACK_URL=http://localhost:5000/auth/facebook/callback
 
 
 <img width="1920" height="1080" alt="Screenshot (595)" src="https://github.com/user-attachments/assets/a3c05d99-10c8-4011-af6d-936a535f0207" />
