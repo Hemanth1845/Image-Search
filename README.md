@@ -1,4 +1,4 @@
-# Image Search
+# Image Search Application
 
 A full-stack web application for searching, selecting, and managing images with authentication.
 
@@ -22,14 +22,12 @@ A full-stack web application for searching, selecting, and managing images with 
 - **API**: Unsplash API
 - **Auth**: Google OAuth + Manual JWT Auth
 
-## Setup Instructions
+### 🔐 1. OAuth Authentication
+- Users can log in securely via **Google**, **GitHub**, or **Facebook** using `Passport.js`.
+- Only logged-in users can access the search and history features.
 
-### Prerequisites
+**Screenshots:**
+- ![Google Login](./screenshots/Screenshot%20(593).png)
+- ![GitHub Login](./screenshots/Screenshot%20(594).png)
+- ![Facebook Login](./screenshots/Screenshot%20(595).png)
 
-- Node.js (v14 or higher)
-- MongoDB Compass
-- Google OAuth credentials (for OAuth login)
-
-### Environment Variables
-
-Create a `.env` file in the server directory with the following variables:
