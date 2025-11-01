@@ -3,10 +3,8 @@ const router = express.Router();
 const passport = require('passport');
 const Search = require('../models/Search');
 
-// Middleware to check authentication
 const auth = passport.authenticate('jwt', { session: false });
 
-// Get top 5 most frequent search terms
 router.get('/', auth, async (req, res) => {
   try {
     const topSearches = await Search.aggregate([
