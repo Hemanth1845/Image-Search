@@ -3,10 +3,10 @@ const router = express.Router();
 const passport = require('passport');
 const Search = require('../models/Search');
 
-// Middleware to check authentication
+
 const auth = passport.authenticate('jwt', { session: false });
 
-// Get user's search history
+
 router.get('/', auth, async (req, res) => {
   try {
     const searches = await Search.find({ userId: req.user._id })
@@ -19,7 +19,7 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-// Clear user's search history
+
 router.delete('/', auth, async (req, res) => {
   try {
     await Search.deleteMany({ userId: req.user._id });
