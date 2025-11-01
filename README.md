@@ -27,6 +27,8 @@ A full-stack web application for searching, selecting, and managing images with 
 - Only logged-in users can access the search and history features.
 
 **Screenshots:**
+- <img width="1910" height="878" alt="Screenshot 2025-11-01 135914" src="https://github.com/user-attachments/assets/56cf6902-5208-4fb2-9505-c06292a5a2ef" />
+
 - ![Google Login](./screenshots/Screenshot%20(593).png)
 - ![GitHub Login](./screenshots/Screenshot%20(594).png)
 - ![Facebook Login](./screenshots/Screenshot%20(595).png)
