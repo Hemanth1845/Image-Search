@@ -53,6 +53,15 @@ A full-stack web application for searching, selecting, and managing images with 
 
 
 
+- <img width="1920" height="1080" alt="Screenshot (597)" src="https://github.com/user-attachments/assets/927c3157-e422-4f6d-908c-e6cca415f04b" />
+- <img width="1906" height="822" alt="Screenshot 2025-11-01 151651" src="https://github.com/user-attachments/assets/4ec828e9-9d80-48f5-81c7-7ed7d7f09104" />
+- <img width="1883" height="685" alt="Screenshot 2025-11-01 151711" src="https://github.com/user-attachments/assets/08226f07-25de-4c09-8148-63284ea944d1" />
+
+
+
+
+
+
 
 
 Image-Search/
