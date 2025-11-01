@@ -1,0 +1,87 @@
+/* TopBanner.css - Styles for top searches banner */
+.top-banner {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.top-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-banner-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  white-space: nowrap;
+}
+
+.top-banner-title i {
+  font-size: 1.2rem;
+}
+
+.top-searches-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding-bottom: 0.5rem;
+}
+
+.top-searches-carousel::-webkit-scrollbar {
+  height: 4px;
+}
+
+.top-searches-carousel::-webkit-scrollbar-track {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+
+.top-searches-carousel::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.top-search-item {
+  background-color: var(--bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-speed);
+}
+
+.top-search-item:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.search-term {
+  font-weight: 500;
+}
+
+.search-count {
+  margin-left: 0.25rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .top-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .top-searches-carousel {
+    width: 100%;
+  }
+}

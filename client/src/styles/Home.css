@@ -1,0 +1,109 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.search-container {
+  margin-top: 1rem;
+}
+
+.search-input-container {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  padding: 0 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.search-results-info {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.search-results-info h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.selected-images-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.selected-images-bar p {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.download-button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.download-button:hover {
+  background-color: #e55a3a;
+}
+
+.spinner-small {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input-container {
+    max-width: 100%;
+  }
+  
+  .search-results-info h2 {
+    font-size: 1.2rem;
+  }
+}

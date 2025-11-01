@@ -1,0 +1,95 @@
+/* History.css - Styles for history page */
+.history-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.history-header h1 {
+  color: var(--primary-color);
+}
+
+.clear-history-button {
+  background-color: var(--error-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.clear-history-button:hover {
+  background-color: #bd2130;
+}
+
+.history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.history-item {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  overflow: hidden;
+  transition: transform var(--transition-speed);
+}
+
+.history-item:hover {
+  transform: translateY(-3px);
+}
+
+.history-item-content {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-term {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.history-term .term {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.history-term .result-count {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.history-timestamp {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.empty-history {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-light);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .history-item-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .history-timestamp {
+    align-self: flex-end;
+  }
+}
