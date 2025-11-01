@@ -15,13 +15,13 @@ const OAuthCallback = () => {
       const token = params.get('token');
       
       if (token) {
-        // Set token in context
+       // token
         setTokenFromOAuth(token);
         
         // Redirect to home page
         navigate('/');
       } else {
-        // Redirect to login if no token
+        // Redirect
         navigate('/login');
       }
     };
