@@ -11,7 +11,7 @@ const History = () => {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   
-  // Fetch search history on component mount
+ 
   useEffect(() => {
     fetchSearchHistory();
   }, []);
@@ -29,7 +29,7 @@ const History = () => {
     setIsLoading(false);
   };
   
-  // Clear search history
+  
   const clearHistory = async () => {
     if (window.confirm('Are you sure you want to clear your search history?')) {
       setIsLoading(true);
@@ -59,7 +59,7 @@ const History = () => {
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
   
-  // Handle search term click
+  
   const handleSearchClick = (term) => {
     navigate('/', { state: { searchTerm: term } });
   };
